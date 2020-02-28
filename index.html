@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casey's Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+    body {
+				margin: 40px auto;
+				max-width: 650px;
+				line-height: 1.6;
+				font-size: 18px;
+				color: #444;
+				padding: 0 10px;
+				background: #eeeeee;
+				text-align: right;
+				font-family: "Open Sans", sans-serif;
+			}
+			h1,
+			h2,
+			h3 {
+				line-height: 1.2;
+			}
+			h1 {
+				font-weight: 400;
+			}
+			p,
+			label {
+				font-weight: 300;
+			}
+</style>
+</head>
+<body>
+    <h1>
+        Hello, Welcome to my website!
+    </h1>
+
+    <p>
+        You can contact me <a href="mailto:casey@fotokite.com">here</a> or with the following form:
+    </p>
+
+    <Form action="https://mailthis.to/casey@fotokite.com" 
+    method="POST">  
+        <div class="form-group">
+            <label>Name:</label>
+            <input type="text" class="form-control" name="Name" />
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" class="form-control" name="_replyto" />
+        </div>
+        <div class="form-group">
+            <label>Message:</label>
+            <textarea class="form-control" name="message" rows=5 ></textarea>
+        </div>
+        <input type="hidden" name="_honeypot" value="" />
+        <button type="submit" class="btn btn-primary">Send Message</button>
+
+    </Form>
+</body>
+</html>
